@@ -1,8 +1,6 @@
-package ua.tifoha;
+package ua.google.team.hashcode.commons;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class InputParser {
