@@ -1,14 +1,18 @@
 package ua.google.team.hashcode.model;
 
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
  * Created by Vitaliy Sereda on 23.02.17.
  */
 public class Server {
-	public final long id;
-	public final long size;
-	public Set<Video> videos;
+	public  long id;
+	public  long size;
+	public Set<Video> videos = new LinkedHashSet<>();
+
+	public Server() {
+	}
 
 	public Server(long id, long size) {
 		this.id = id;

@@ -1,13 +1,19 @@
 package ua.google.team.hashcode.model;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Endpoint {
-    private final Map<Video, Long> videoRequests;
-    private final Map<Server, Long> serverLatency;
-    private final Long globalLatency;
+    public long id;
+    public Map<Video, Long> videoRequests = new LinkedHashMap<>();
+    public Map<Server, Long> serverLatency = new LinkedHashMap<>();
+    public long globalLatency;
 
-    public Endpoint(Map<Video, Long> videoRequests, Map<Server, Long> serverLatency, Long globalLatency) {
+    public Endpoint() {
+    }
+
+    public Endpoint(long id, Map<Video, Long> videoRequests, Map<Server, Long> serverLatency, Long globalLatency) {
+        this.id = id;
         this.videoRequests = videoRequests;
         this.serverLatency = serverLatency;
         this.globalLatency = globalLatency;
