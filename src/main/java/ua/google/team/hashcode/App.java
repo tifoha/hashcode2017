@@ -1,4 +1,4 @@
-package ua.tifoha;
+package ua.google.team.hashcode;
 
 /**
  * Hello world!

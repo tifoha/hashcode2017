@@ -1,22 +1,22 @@
-package ua.tifoha;
+package ua.google.team.hashcode.model;
 
 /**
  * Created by Vitaliy Sereda on 23.02.17.
  */
 public class Server {
-	public final int id;
-	public final int size;
+	private final long id;
+	private final long size;
 
-	public Server(int id, int size) {
+	public Server(long id, long size) {
 		this.id = id;
 		this.size = size;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public int getSize() {
+	public long getSize() {
 		return size;
 	}
 
