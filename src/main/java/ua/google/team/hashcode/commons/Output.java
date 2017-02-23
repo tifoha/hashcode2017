@@ -18,6 +18,12 @@ public class Output {
 	public static final String SPACE = " ";
 	public static final String OUTPUT_FILE_NAME = "result.in";
 
+	/**
+	 * Write results.
+	 *
+	 * @param map
+	 * 		result map of Map<Server id, Set<Video id>>
+	 */
 	public static void write(Map<Long, Set<Long>> map) {
 
 		// line 1 : N - number of cache servers
