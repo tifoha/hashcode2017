@@ -1,11 +1,14 @@
 package ua.google.team.hashcode.model;
 
+import java.util.Set;
+
 /**
  * Created by Vitaliy Sereda on 23.02.17.
  */
 public class Server {
-	private final long id;
-	private final long size;
+	public final long id;
+	public final long size;
+	public Set<Video> videos;
 
 	public Server(long id, long size) {
 		this.id = id;
