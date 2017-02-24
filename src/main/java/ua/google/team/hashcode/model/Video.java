@@ -19,10 +19,7 @@ public class Video {
 
 	@Override
 	public String toString() {
-		final StringBuilder sb = new StringBuilder(this.getClass().getSimpleName());
-		sb.append("V[").append(id);
-		sb.append(": ").append(size);
-		sb.append(']');
-		return sb.toString();
+		return String.format("V%03d[%d]", id, size);
 	}
+
 }

@@ -29,10 +29,21 @@ public class Server {
 
 	@Override
 	public String toString() {
-		final StringBuilder sb = new StringBuilder(this.getClass().getSimpleName());
-		sb.append("S[").append(id);
-		sb.append(": ").append(size);
-		sb.append(']');
-		return sb.toString();
+		return String.format("S%03d[%d]", id, size);
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Server)) return false;
+
+		Server server = (Server) o;
+
+		return id == server.id;
+	}
+
+	@Override
+	public int hashCode() {
+		return (int) (id ^ (id >>> 32));
 	}
 }
